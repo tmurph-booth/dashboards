@@ -1,0 +1,13 @@
+<h1>Currency pairs</h1>
+
+<p>Go <a href="/">back</a>.</p>
+
+<ul>
+  <% @arrayOfCurrencies.each do |oneSymbol| %>
+    <li>
+      <a href="/forex/<%= oneSymbol %>">
+        Convert 1 <%= oneSymbol %> to...
+      </a>
+    </li>
+    <% end %>
+</ul>

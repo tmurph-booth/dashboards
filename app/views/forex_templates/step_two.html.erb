@@ -1,0 +1,13 @@
+<h1>Convert <%= @previousInput %></h1>
+
+<p>Go <a href="/forex">back</a>.</p>
+
+<ul>
+  <% @arrayOfCurrencies.each do |oneSymbol| %>
+    <li>
+      <a href="/forex/<%= @previousInput %>/<%= oneSymbol %>">
+        Convert 1 <%= @previousInput %> to <%= oneSymbol %>...
+      </a>
+    </li>
+    <% end %>
+</ul>
